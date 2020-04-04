@@ -64,7 +64,7 @@ class ChinaData {
             if (china.getString("name").equals("中国")) {
                 break;
             }
-        };
+        }
         mProvinces = china.getJSONArray("children");
         loadIntroductionMap();
         loadDistributionEntriesMap();
@@ -137,26 +137,27 @@ class ChinaData {
             JSONObject chinaTotal = data.getJSONObject("chinaTotal");
             JSONObject today = chinaTotal.getJSONObject("today");
             JSONObject total = chinaTotal.getJSONObject("total");
+            JSONObject extData = chinaTotal.getJSONObject("extData");
 
             int totalConfirmed = getInt(total, "confirm");
             int totalDead = getInt(total, "dead");
             int totalCured = getInt(total, "heal");
             int existingConfirmed = totalConfirmed - totalDead - totalCured;
-            int existingSuspected = getInt(total, "suspect");
-            int existingSevere = getInt(total, "severe");
+            int noSymptom = getInt(extData, "noSymptom");
+            int input = getInt(total, "input");
 
             int increaseConfirmed = getInt(today, "confirm");
             int increaseDead = getInt(today, "dead");
             int increaseCured = getInt(today, "heal");
-            int increaseExistingSuspected = getInt(today, "suspect");
-            int increaseExistingSevere = getInt(today, "severe");
             int increaseExistingConfirmed = getInt(today, "storeConfirm");
+            int increaseNoSymptom = getInt(extData, "incrNoSymptom");
+            int increaseInput = getInt(today, "input");
 
             mTotalConfirmed = totalConfirmed;
             mExistingConfirmed = existingConfirmed;
             mIntroductionMap.put("existingConfirmed", format(existingConfirmed, increaseExistingConfirmed));
-            mIntroductionMap.put("existingSuspected", format(existingSuspected, increaseExistingSuspected));
-            mIntroductionMap.put("existingSevere", format(existingSevere, increaseExistingSevere));
+            mIntroductionMap.put("noSymptom", format(noSymptom, increaseNoSymptom));
+            mIntroductionMap.put("input", format(input, increaseInput));
             mIntroductionMap.put("confirmed", format(totalConfirmed, increaseConfirmed));
             mIntroductionMap.put("dead", format(totalDead, increaseDead));
             mIntroductionMap.put("cured", format(totalCured, increaseCured));

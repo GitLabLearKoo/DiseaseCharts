@@ -39,12 +39,12 @@ class IntroductionDrawer implements Observer {
                 Objects.requireNonNull(mTextViewMap.get("tvIntroExistingConfirmed"))
                         .setText(String.format(mActivity.getString(R.string.intro_existing_confirmed),
                                 mIntroductionMap.get("existingConfirmed")));
-                Objects.requireNonNull(mTextViewMap.get("tvIntroExistingSuspected"))
-                        .setText(String.format(mActivity.getString(R.string.intro_existing_suspected),
-                                mIntroductionMap.get("existingSuspected")));
-                Objects.requireNonNull(mTextViewMap.get("tvIntroExistingSevere"))
-                        .setText(String.format(mActivity.getString(R.string.intro_existing_severe),
-                                mIntroductionMap.get("existingSevere")));
+                Objects.requireNonNull(mTextViewMap.get("tvIntroNoSymptom"))
+                        .setText(String.format(mActivity.getString(R.string.intro_no_symptom),
+                                mIntroductionMap.get("noSymptom")));
+                Objects.requireNonNull(mTextViewMap.get("tvIntroInput"))
+                        .setText(String.format(mActivity.getString(R.string.intro_input),
+                                mIntroductionMap.get("input")));
                 Objects.requireNonNull(mTextViewMap.get("tvIntroConfirmed"))
                         .setText(String.format(mActivity.getString(R.string.intro_total_confirmed),
                                 mIntroductionMap.get("confirmed")));
