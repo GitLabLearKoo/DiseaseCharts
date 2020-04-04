@@ -64,7 +64,7 @@ class ChinaData {
             if (china.getString("name").equals("中国")) {
                 break;
             }
-        };
+        }
         mProvinces = china.getJSONArray("children");
         loadIntroductionMap();
         loadDistributionEntriesMap();

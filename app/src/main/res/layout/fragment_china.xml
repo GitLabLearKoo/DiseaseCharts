@@ -34,28 +34,28 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                     android:text="@string/existing_confirmed" />
 
                 <TextView
-                    android:id="@+id/tv_intro_existing_suspected"
+                    android:id="@+id/tv_intro_no_symptom"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:singleLine="false"
-                    android:background="@color/existing_suspected"
+                    android:background="@color/no_symptom"
                     android:textSize="20sp"
                     android:textColor="@color/text"
-                    android:text="@string/existing_suspected" />
+                    android:text="@string/no_symptom" />
 
                 <TextView
-                    android:id="@+id/tv_intro_existing_severe"
+                    android:id="@+id/tv_intro_input"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:singleLine="false"
-                    android:background="@color/existing_severe"
+                    android:background="@color/input"
                     android:textSize="20sp"
                     android:textColor="@color/text"
-                    android:text="@string/existing_severe" />
+                    android:text="@string/input" />
             </LinearLayout>
 
             <LinearLayout
