@@ -42,8 +42,8 @@ public class ChinaFragment extends Fragment {
     private SwipeRefreshLayout mSwipeRefreshLayout;
 
     private TextView mTVIntroExistingConfirmed;
-    private TextView mTVIntroExistingSuspected;
-    private TextView mTVIntroExistingSevere;
+    private TextView mTVIntroNoSymptom;
+    private TextView mTVIntroInput;
     private TextView mTVIntroConfirmed;
     private TextView mTVIntroDead;
     private TextView mTVIntroCured;
@@ -104,8 +104,8 @@ public class ChinaFragment extends Fragment {
         });
         {   // *Introduction* //
             mTVIntroExistingConfirmed = view.findViewById(R.id.tv_intro_existing_confirmed);
-            mTVIntroExistingSuspected = view.findViewById(R.id.tv_intro_existing_suspected);
-            mTVIntroExistingSevere = view.findViewById(R.id.tv_intro_existing_severe);
+            mTVIntroNoSymptom = view.findViewById(R.id.tv_intro_no_symptom);
+            mTVIntroInput = view.findViewById(R.id.tv_intro_input);
             mTVIntroConfirmed = view.findViewById(R.id.tv_intro_confirmed);
             mTVIntroDead = view.findViewById(R.id.tv_intro_dead);
             mTVIntroCured = view.findViewById(R.id.tv_intro_cured);
@@ -113,8 +113,8 @@ public class ChinaFragment extends Fragment {
             // 包装TextView
             Map<String, TextView> textViewMap = new HashMap<>();
             textViewMap.put("tvIntroExistingConfirmed", mTVIntroExistingConfirmed);
-            textViewMap.put("tvIntroExistingSevere", mTVIntroExistingSevere);
-            textViewMap.put("tvIntroExistingSuspected", mTVIntroExistingSuspected);
+            textViewMap.put("tvIntroNoSymptom", mTVIntroNoSymptom);
+            textViewMap.put("tvIntroInput", mTVIntroInput);
             textViewMap.put("tvIntroConfirmed", mTVIntroConfirmed);
             textViewMap.put("tvIntroDead", mTVIntroDead);
             textViewMap.put("tvIntroCured", mTVIntroCured);
