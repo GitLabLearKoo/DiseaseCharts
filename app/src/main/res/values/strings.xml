@@ -8,7 +8,7 @@
     <string name="hubei">湖北</string>
     <string name="other">其他</string>
     <string name="intro_existing_confirmed">现存确诊\n%1$s</string>
-    <string name="intro_no_symptom">无症状感染者\n%1$s</string>
+    <string name="intro_no_symptom">无症状\n%1$s</string>
     <string name="intro_input">境外输入\n%1$s</string>
     <string name="intro_total_confirmed">累计确诊\n%1$s</string>
     <string name="intro_total_dead">累计死亡\n%1$s</string>
@@ -22,7 +22,7 @@
     <string name="suspected">疑似</string>
     <string name="date">截至</string>
     <string name="existing_confirmed">现存确诊</string>
-    <string name="no_symptom">无症状感染者</string>
+    <string name="no_symptom">无症状</string>
     <string name="input">境外输入</string>
     <string name="total_confirmed">累计确诊</string>
     <string name="total_dead">累计死亡</string>
